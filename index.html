@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meu Portifolio</title>
+    <link rel="stylesheet" href="Style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <script src="style.js"></script>
+</head>
+<body>
+    <div class="container-p1 container-secoes secoes">
+        <nav class="navbar">
+            <div class="navbar-brand">
+                <h3>Pedro Rafael.</h3>
+            </div>
+            <div class="menu-hamburguer" id="menu-hamburguer" >
+                <div class="linha linha1"></div>
+                <div class="linha linha2"></div>
+                <div class="linha linha3"></div>
+            </div>
+            <div class="navbar-nav" id="menu">
+                <ul>
+                    <li class="menu-item"><a href="#competencias">Competências <span class="pilar"></span> Projetos</a></li>
+                    <li class="menu-item"><a href="#sobremim">Sobre Mim</a></li>
+                    <li class="menu-item"><a href="#contato">Contato</a></li>
+                </ul>
+            </div>  
+        </nav>
+        <div class="container_apresentacao">
+            <div class="apresentacao">
+                <h3>Hello!</h3>
+                <h2>Eu sou Pedro Rafael</h2>
+                <p>Seu Proximo Desenvolvedor!</p> 
+                <p>E esse é o meu Portifolio Seja muito Bem-Vindo!</p>
+                <button class="btn-contato btn-contato-1" onclick="openLinks(`https://wa.me/5551994465251?text=Ol%C3%A1%20Pedro,%20vi%20o%20seu%20portif%C3%B3lio,%20gostaria%20de%20conversar%20mais%20com%20voc%C3%AA.`)">Vamos Conversar <span></span></button>
+            </div>
+            <div class="container_hexagon">
+                <div class="hexagon">
+                    <div class="hexagon-in">
+                        <div class="hexagon-image" style="background-image: url(imagem/foto_perfil.jpg);"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container-secoes secoes" id="competencias">
+        <h3>Competências | Projetos</h3><span class="traço"></span>
+        <div class="sub-title">
+            <h1>Especialista Em</h1>
+        </div>
+        <div class="carousel-container">
+            <span class="btn-control btn-left" onclick="moveCarousel(-1)"><i class="fa-solid fa-angle-left" id="left"></i></span>
+            <div class="carousel">
+                <div class="carousel-track" id="carousel-track">
+
+                    <div class="card">
+                        <div class="icon">
+                            <i class="fa-regular fa-file-code"></i>
+                        </div>
+                        <div class="conteudo">
+                            <article>
+                                <h4>HTML/CSS Design</h4>
+                                <p>Especialista em HTML e CSS, tanto na criação de designs quanto semântica HTML:5, alto domino nas duas tecnologias e com certificado de término de curso pela Udemy. Além da minha faculdade que atualmente faço pela UniRitter, ainda estou fazendo diversos cursos para me especializar e aprimorar ainda mais na área de TI. Especialista em Design e layouts, com base nessas tecnologias já citadas sou capaz de auxiliar e desenvolver layouts responsivos e elegantes.</p>
+                                <h4>Exemplo:</h4>
+                                <div class="projeto">
+                                    <p>Este é um exemplo aonde eu criei um design de uma página fictícia completamente responsiva, utilizando somente HTML: 5 e CSS.</p>
+                                    <img src="imagem/ser-digital.png" alt="ser-digital">
+                                </div>
+                                <button class="btn-projetos" onclick="openLinks('https://github.com/rafaelxx100/Projeto-9-SerDigital/blob/main/index.html')">Detalhes</button>  
+                            </article>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <div class="icon">
+                            <i class="fa-brands fa-bootstrap"></i>
+                        </div>
+                        <div class="conteudo">
+                            <article>
+                                <h4>Bootstrap: 5</h4>
+                                <p>Possuo domínio em Bootstrap 5, com diversos cursos concluídos sobre o tema. Utilizo essa ferramenta para criar interfaces responsivas e modernas, garantindo a melhor experiência de usuário. Minha expertise em Bootstrap 5 reflete-se em meus projetos, onde aplico as melhores práticas e técnicas mais atuais do mercado.</p>
+                                <h4>Aqui esta um exemplo:</h4>
+                                <div class="projeto">
+                                    <p>Este é um exemplo aonde eu recriei o site do Spotfy do zero utilizando classes do Bootstrap:5
+                                        (Este projeto foi feito exclusivamente para fins de estudo e treinamento).</p>
+                                    <img src="imagem/spotfy-clone.png" alt="ser-digital">
+                                </div>
+                                <button class="btn-projetos" onclick="openLinks('https://github.com/rafaelxx100/cloneSpotfy_treino/blob/main/index.html')">Detalhes</button>  
+                            </article>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <div class="icon">
+                            <i class="fa-brands fa-js"></i>
+                        </div>
+                        <div class="conteudo">
+                            <article>
+                                <h4>JavaScript e ECMAScript</h4>
+                                <p>Tenho um bom domínio em JavaScript e ECMAScript, com dois cursos completos na área. Utilizo essas tecnologias para desenvolver aplicações dinâmicas e interativas, implementando as melhores práticas e padrões do mercado. Minha expertise garante a entrega de soluções eficientes e de alta qualidade nos meus projetos.</p>
+                                <h4>Exemplo:</h4>
+                                <div class="projeto">
+                                    <p>O exemplo que eu gostaria de mostrar seria esse próprio portifólio aonde toda a codificação desde o html e design até o JavaScript foi desenvolvido inteiramente por mim.</p>
+                                </div>
+                                <button class="btn-projetos" onclick="openLinks('')">Detalhes</button>  
+                            </article>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <div class="icon">
+                            <i class="fa-brands fa-php"></i>
+                        </div>
+                        <div class="conteudo">
+                            <article>
+                                <h4>PHP</h4>
+                                <p>
+                                    Tenho um bom domínio em PHP e orientação a objetos, utilizando essas habilidades para desenvolver sistemas robustos e escaláveis. Minhas práticas seguem os melhores padrões da indústria, garantindo eficiência e manutenção simplificada nos projetos. Minha experiência reflete-se na entrega de soluções de alta qualidade e performance.</p>
+                                <h4>Exemplo:</h4>
+                                <div class="projeto">
+                                    <p>Este é um exemplo aonde eu criei um HelpDesk no servidor local da empresa em que eu trabalhava para a criação de tickets e chamados, usando PHP.</p>
+                                    <img src="imagem/app-helpDesk.png" alt="spotfy-clone">
+                                </div>
+                                <button class="btn-projetos" onclick="openLinks('https://github.com/rafaelxx100/app_helpDesk/tree/main')">Detalhes</button>  
+                            </article>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <div class="icon">
+                            <i class="fa-solid fa-database"></i>
+                        </div>
+                        <div class="conteudo">
+                            <article>
+                                <h4>Maria DB (MySQL)</h4>
+                                <p>Tenho um excelente domínio sobre MySQL, complementado por um curso completo na linguagem. Minhas habilidades incluem a criação e gestão de bancos de dados, a elaboração de consultas complexas, otimização de desempenho e a implementação de práticas de segurança. Com essa expertise, sou capaz de projetar e manter sistemas robustos e eficientes, garantindo a integridade e a disponibilidade dos dados.</p>
+                            </article>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <div class="icon">
+                            <img src="imagem/Python-logo-notext.svg.png" alt="" style="width: 40px; padding: 0; margin: 0;">
+                        </div>
+                        <div class="conteudo">
+                            <article>
+                                <h4>Python</h4>
+                                <p>Tenho um bom domínio sobre Python, com experiência em desenvolvimento de aplicações e automação de tarefas. Estou continuamente estudando a linguagem para me aperfeiçoar ainda mais, explorando áreas como análise de dados, aprendizado de máquina e desenvolvimento web. Minha dedicação ao aprendizado contínuo me permite manter-me atualizado com as melhores práticas e novas ferramentas, garantindo a entrega de soluções eficientes e inovadoras.</p>
+                                
+                            </article>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <div class="icon">
+                            <i class="fa-solid fa-computer"></i>
+                        </div>
+                        <div class="conteudo">
+                            <article>
+                                <h4>Suporte Tecnico</h4>
+                                <p>Alto conhecimento em informática, tanto pela minha faculdade onde é um assunto muito abordado e aprofundado tanto pela minha experiência profissional, aonde trabalhei por 6 meses como suporte técnico na CENTRAL CRED aonde realizava a manutenção dos equipamentos do escritório além do treinamento para pessoas que não possuíam um bom domínio sobre o sistema e aos equipamentos utilizados.</p>  
+                            </article>
+                        </div>
+                    </div>
+                   
+                </div>
+            </div>
+            <span class="btn-control btn-right" onclick="moveCarousel(1)"><i class="fa-solid fa-angle-right" id="right"></i></span>
+        </div>
+    </div>
+    <div class="container-bg">
+        <div class="container-secoes secoes secao-sm " id="sobremim">
+            <h3>Sobre Mim</h3><span class="traço-sm"></span>
+            <div class="sub-title">
+                <h1>Quem sou eu?</h1>
+            </div>
+            <div class="content-sm">
+                <article>
+                    <p>Olá, sou um jovem de 22 anos apaixonado por tecnologia. Desde 2022, estou cursando Análise e Desenvolvimento de Sistemas na faculdade, uma área que me fascina profundamente. Minha jornada acadêmica é complementada por diversos cursos externos que faço continuamente para me aperfeiçoar e me manter atualizado com as inovações do setor. Minha dedicação ao aprendizado e ao desenvolvimento profissional reflete meu compromisso em me tornar um especialista na área de tecnologia. Estou sempre em busca de novos conhecimentos e desafios que possam aprimorar minhas habilidades e contribuir para meu crescimento pessoal e profissional. Acredito que a combinação de teoria e prática é essencial para alcançar excelência e inovação no campo da tecnologia. </p>
+                    <button class="btn-projetos btn-ajuste" onclick="openLinks('https://github.com/rafaelxx100')">Meu GitHub  <i class="fa-brands fa-github-alt"></i></button>
+                </article>
+                <img src="imagem/imagem-sobre-mim.jpg" alt="foto-de-perfil">
+            </div>
+        </div>
+    </div>
+
+    <div class="container-secoes">
+        <div class="contato" id="contato">
+            <article>
+            <h2>Gostou do que viu?</h2>
+            <h3> Vamos Trabalhar Juntos</h3>
+            <p>Comprometido com a evolução tecnológica, busco integrar equipes dinâmicas para impulsionar a inovação. Minha paixão pela informática reflete-se em minha constante busca por desafios e aprendizado. Estou pronto para contribuir ativamente, aplicando minhas habilidades e dedicação para alcançar resultados notáveis.</p>
+            <p>Todos os meus contatos estão disponiveis nos icones abaixo, se preferir me ligar meu numero é <a href="https://wa.me/5551994465251?text=Ol%C3%A1%20Pedro,%20vi%20o%20seu%20portif%C3%B3lio,%20gostaria%20de%20conversar%20mais%20com%20voc%C3%AA.">(51) 994465251.</a></p>
+            <button href="mailto:pedrorafaeldeandrade@gmail.com"><i class="fa-regular fa-envelope envelope-2"></i> Me mande um e-mail</button>
+            </article>
+        </div>
+    </div>
+    <div class="linha-footer"></div>
+    <footer class="container-secoes footer">
+        <p><i class="fa-regular fa-copyright"></i> 2024 - Desenvolvido por Pedro Rafael</p>
+        <span class="icons"><a href="https://wa.me/5551994465251"><i class="fa-brands fa-whatsapp"></i></a> <a href="https://www.facebook.com/pedrorafaeldeandrade"><i class="fa-brands fa-facebook"></i></a> <a href="https://twitter.com/hulkgaucho"><i class="fa-brands fa-twitter"></i></a> <a href="https://www.linkedin.com/in/pedro-rafael-de-andrade-goulart-0a2b6621b/"><i class="fa-brands fa-linkedin"></i></a> <a href="https://www.instagram.com/_pe_rafa/"><i class="fa-brands fa-instagram"></i></a> <a href="https://github.com/rafaelxx100"><i class="fa-brands fa-github-alt"></i></a></span>
+    </footer>
+    
+</body>
+</html>
