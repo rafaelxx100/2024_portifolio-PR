@@ -348,6 +348,24 @@ body{
     }
  }
 
+/* X-Large devices (large desktops, 1200px and up)*/
+@media (min-width: 1400px) {
+    .container-p1{
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+    
+    }
+
+    #menu a{
+        font-size: 20px;
+    }
+    .container_hexagon{
+        transform: scale(1.3);
+    }
+ }
+
+
 
 /*compêtencias e projetos antes*/
 .carousel-container{
